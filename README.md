@@ -1,50 +1,25 @@
-# Welcome to your Expo app 👋
+# Avaliação: Projeto React Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Como criar um emulador no Android Studio
+1. Abra o Android Studio.  
+2. No menu superior, vá em **“Tools” > “AVD Manager”**.  
+3. Clique em **“Create Virtual Device…”**.  
+4. Escolha um dispositivo (e.g. Pixel 5), clique em **“Next”**.  
+5. Selecione uma imagem do sistema (e.g. Android 12), clique em **“Next”** e depois em **“Finish”**.
 
-## Get started
+## Como habilitar o SDK
+1. No Android Studio, vá em **“Tools” > “SDK Manager”**.  
+2. Em **“SDK Platforms”**, marque a versão desejada (e.g. Android 12).  
+3. Em **“SDK Tools”**, certifique‑se de que **“Android SDK Build-Tools”**, **“Android SDK Platform-Tools”** e **“Android SDK Tools”** estão marcados.  
+4. Clique em **“Apply”** e **“OK”** para baixar/instalar.
 
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+## Como configurar o ANDROID_HOME e JAVA_HOME
+### No macOS/Linux (bash ou zsh)
 ```bash
-npm run reset-project
-```
+# Exemplo para o ~/.bashrc ou ~/.zshrc
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+export JAVA_HOME=$(/usr/libexec/java_home)   # assume JDK instalado
+export PATH=$PATH:$JAVA_HOME/bin

@@ -2,10 +2,10 @@ import React from 'react';
 import { Linking, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 const App = () => {
-  const nome = 'Seu Nome';
+  const nome = 'Arthur Henrique Pereira';
   const data = new Date().toLocaleDateString('pt-BR');
   const unidade = 'Codificar Aplicações de dispositivos movéis';
-  const githubLink = 'https://github.com/seu-usuario/avaliacao';
+ 
 
   return (
     <SafeAreaView style={styles.container}>

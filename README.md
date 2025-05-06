@@ -1,6 +1,4 @@
-# Avaliação: Projeto React Native
-
-## Como criar um emulador no Android Studio
+# Como criar um emulador no Android Studio
 1. Abra o Android Studio.  
 2. No menu superior, vá em **“Tools” > “AVD Manager”**.  
 3. Clique em **“Create Virtual Device…”**.  
